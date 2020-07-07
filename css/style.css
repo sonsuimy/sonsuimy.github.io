@@ -37,8 +37,8 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 .h4-title{padding:0 0 15px;font-size:20px;font-weight:400;}
 .desc-p{padding:0 0 20px;}
 .ul-type01{padding:0 0 20px;}
-.ul-type01 li{position:relative;padding:0 0 4px;}
-.ul-type01 li:before{content:'';display:block;clear:both;}
+.ul-type01 li{position:relative;padding:0 0 4px 12px;}
+.ul-type01 li:before{content:'';display:block;position:absolute;top:11px;left:0;width:5px;height:1px;background:#222;}
 .ul-type01 li:last-of-type{padding-bottom:0;}
 
 /* main */
