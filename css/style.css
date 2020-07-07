@@ -56,8 +56,9 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #introduce{display:table;width:100%;table-layout:fixed;}
 #introduce h2{position:relative;margin-bottom:26px;font-size:32px;font-weight:300;color:#000;line-height:1.5em;letter-spacing:-1px;}
 #introduce > div{display:table-cell;vertical-align:top;}
-#introduce .intro-box{padding:30px 60px 30px 0;border-right:1px solid #d8d8d8;}
-#introduce .skill-box{padding:40px 0 30px 60px;}
+#introduce .intro-box{padding:30px 65px 30px 0;}
+#introduce .intro-box .img-box img{max-width:100%;}
+#introduce .skill-box{padding:30px 0 30px 60px;}
 #introduce .skill-box > div{padding:0 0 45px;}
 #introduce .skill-box > div:last-of-type{padding:0;}
 
