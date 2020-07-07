@@ -35,7 +35,7 @@ body{font-family:'Open Sans', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 
 section{position:relative;padding:120px 0;overflow:hidden;}
 .h3-title{padding:0 0 15px;font-size:30px;font-weight:400;color:#000;}
 .h4-title{padding:0 0 15px;font-size:20px;font-weight:400;color:#000;}
-.h4-title i{position:relative;top:-2px;padding:0 10px 0 0;font-size:12px;color:#8c43ff;}
+.h4-title i{position:relative;top:-2px;padding:0 10px 0 0;font-size:12px;color:#000;}
 .desc-p{padding:0 0 20px;}
 .ul-type01 li{position:relative;padding:0 0 4px 12px;}
 .ul-type01 li:before{content:'';display:block;position:absolute;top:11px;left:0;width:5px;height:1px;background:#222;}
@@ -57,9 +57,10 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #introduce{display:table;width:100%;table-layout:fixed;}
 #introduce h2{position:relative;margin-bottom:26px;font-size:32px;font-weight:300;color:#000;line-height:1.5em;letter-spacing:-1px;}
 #introduce > div{display:table-cell;vertical-align:top;}
-#introduce .intro-box{padding:30px 70px 30px 0;}
+#introduce .intro-box{padding:30px 70px 30px 0;text-align:right;}
 #introduce .intro-box .img-box{padding:0 0 25px;}
 #introduce .intro-box .img-box img{max-width:100%;}
+#introduce .intro-box p{font-size:16px;letter-spacing:-1px;}
 #introduce .skill-box{padding:30px 0 30px 50px;}
 #introduce .skill-box > div{padding:0 0 45px;}
 #introduce .skill-box > div:last-of-type{padding:0;}
