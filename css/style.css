@@ -36,21 +36,20 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 .h3-title{padding:0 0 15px;font-size:30px;font-weight:400;}
 .h4-title{padding:0 0 15px;font-size:20px;font-weight:400;}
 .desc-p{padding:0 0 20px;}
-.ul-type01{padding:0 0 20px;}
 .ul-type01 li{position:relative;padding:0 0 4px 12px;}
 .ul-type01 li:before{content:'';display:block;position:absolute;top:11px;left:0;width:5px;height:1px;background:#222;}
 .ul-type01 li:last-of-type{padding-bottom:0;}
 
 /* main */
-#header{height:100vh;overflow:hidden;}
+#header{position:relative;height:100vh;overflow:hidden;}
 #header .nav-bar-line{position:fixed;top:0;left:0;z-index:10;width:100%;height:6px;background:linear-gradient(120deg, #00e4d0, #5983e8);}
 #header .bg{position:absolute;width:100%;height:100%;top:50%;left:50%;transform:translate(-50%, -50%);opacity:0;transition:all .2s;object-fit:cover;}
 #header .bg.loaded{opacity:1;}
-#header .logo{position:absolute;top:50px;left:8%;}
+#header .logo{position:absolute;top:50px;left:8%;font-size:15px;color:#000;}
 #header .copy{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;text-align:center;}
-#header .copy .main-copy{padding-bottom:40px;font-size:60px;font-weight:300;letter-spacing:-3px;color:#000;}
+#header .copy .main-copy{padding-bottom:25px;font-size:60px;font-weight:300;line-height:1;letter-spacing:-3px;color:#000;}
 #header .copy .main-copy span{position:relative;opacity:0;-webkit-animation:main-tit-ani 1s ease-in-out 0s forwards;animation:main-tit-ani 1s ease-in-out .3s forwards;}
-#header .copy .sub-copy{letter-spacing:-1px;color:#222;opacity:0;-webkit-animation:sub-tit-ani 1s ease-in-out 2s forwards;animation:sub-tit-ani 1s ease-in-out 2s forwards;}
+#header .copy .sub-copy{position:relative;letter-spacing:-1px;font-size:18px;color:#222;opacity:0;-webkit-animation:sub-tit-ani .5s ease-in-out 2s forwards;animation:sub-tit-ani .5s ease-in-out 2s forwards;}
 #header .scroll{width:100%;text-align:center;position:absolute;bottom:50px;-webkit-animation:arrow-ani 1s ease-in-out 3.2s infinite;animation:arrow-ani 1s ease-in-out 3.2s infinite;}
 
 /* introduce */
@@ -59,7 +58,7 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #introduce > div{display:table-cell;vertical-align:top;}
 #introduce .intro-box{padding:30px 60px 30px 0;border-right:1px solid #d8d8d8;}
 #introduce .skill-box{padding:40px 0 30px 60px;}
-#introduce .skill-box > div{padding:0 0 40px;}
+#introduce .skill-box > div{padding:0 0 45px;}
 #introduce .skill-box > div:last-of-type{padding:0;}
 
 /* career */
@@ -117,12 +116,12 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     to{left:0;opacity:1;}
 }
 @-webkit-keyframes sub-tit-ani{
-    from{opacity:0;}
-    to{opacity:1;}
+    from{top:10px;opacity:0;}
+    to{top:0;opacity:1;}
 }
 @keyframes sub-tit-ani{
-    from{opacity:0;}
-    to{opacity:1;}
+    from{top:10px;opacity:0;}
+    to{top:0;opacity:1;}
 }
 @-webkit-keyframes arrow-ani{
     0%, 100%{bottom:50px;}
@@ -142,11 +141,24 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 }
 
 /* responsive */
+@media screen and (max-width:1280px){
+    .wrapper{padding:120px 10px;box-sizing:border-box;}
+}
+@media screen and (max-width:1024px){
+    /* common */
+    body{font-size:14px;}
+
+    /* introduce */
+    #introduce{display:block;}
+    #introduce h2{margin-bottom:20px;font-size:24px;}
+    #introduce > div{display:block;}
+    #introduce .intro-box{padding:0 10px 20px;border-right:0;border-bottom:1px solid #d8d8d8;}
+    #introduce .skill-box{padding:20px 10px 0;}
+}
 @media screen and (max-width:900px){
     selction{padding:80px 0;}
 
     #introduce{padding:100px 5%;}
-    #introduce p{font-size:16px;}
 
     .project .left,
     .project .right{float:none;width:90%;padding:0 5%;}
