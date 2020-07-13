@@ -94,9 +94,13 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 .project .btn-con a:hover{color:#fff;background:#8c43ff;}
 
 /* work */
-#work > div{display:table;width:100%;table-layout:fixed;}
+#work > div{display:table;padding:0 0 20px;width:100%;border-top:1px solid #eee;border-bottom:1px solid #eee;table-layout:fixed;}
 #work > div > div{display:table-cell;vertical-align:middle;}
-#work .left .hash-list li span{display:inline-block;padding:.275rem .75rem;border-radius:.25rem;background:#8c43ff;font-size:12px;line-height:1.5;color:#fff;}
+#work .left .hash-list li{display:inline-block;}
+#work .left .hash-list li:last-of-type{margin-right:0;}
+#work .left .hash-list li span{display:inline-block;padding:.275rem .75rem;border-radius:.25rem;font-size:12px;line-height:1.5;font-weight:600;color:#fff;}
+#work .left .hash-list li span.web{background:#8c43ff;}
+#work .left .hash-list li span.app{background:#dc1c1c;}
 #work .right .card-list > li{display:inline-block;position:relative;margin:0 30px 0 0;padding:150px 30px 30px;width:calc(50% - 20px);vertical-align:top;box-sizing:border-box;}
 #work .right .card-list > li:last-of-type{margin-right:0;}
 #work .right .card-list > li p{position:absolute;top:35px;right:0;font-family:'Open Sans', sans-serif;font-size:150px;line-height:1;font-weight:700;color:#f1f1f1;}
