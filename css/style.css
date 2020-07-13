@@ -96,10 +96,12 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 /* work */
 #work > div{display:table;width:100%;table-layout:fixed;}
 #work > div > div{display:table-cell;vertical-align:middle;}
-#work .left .hash-list li span{display:inline-block;padding:.275rem .75rem;border-radius:.25rem;background:#8c43ff;font-size:14px;line-height:1.5;color:#fff;}
-#work .right .card-list > li{display:inline-block;position:relative;margin:0 30px 0 0;padding:150px 30px 30px;width:calc(50% - 20px);border:1px solid #d8d8d8;vertical-align:top;box-sizing:border-box;}
+#work .left .hash-list li span{display:inline-block;padding:.275rem .75rem;border-radius:.25rem;background:#8c43ff;font-size:12px;line-height:1.5;color:#fff;}
+#work .right .card-list > li{display:inline-block;position:relative;margin:0 30px 0 0;padding:150px 30px 30px;width:calc(50% - 20px);vertical-align:top;box-sizing:border-box;}
 #work .right .card-list > li:last-of-type{margin-right:0;}
 #work .right .card-list > li p{position:absolute;top:10px;right:10px;font-size:150px;line-height:1;font-weight:700;color:#f1f1f1;}
+#work .right .card-list > li h4{position:relative;}
+#work .right .card-list > li h4:after{content:'';display:inline-block;position:relative;top:-10px;width:5px;height:5px;border-radius:50%;background:#8c43ff;}
 
 /* footer */
 #footer{padding:100px 0;}
