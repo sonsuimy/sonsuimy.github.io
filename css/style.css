@@ -25,7 +25,7 @@ input[type=submit]{-webkit-appearance:none;appearance:none;/* for ios */}
 
 /* common */
 body{font-family:'Open Sans', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif;font-size:16px;line-height:1.6em;color:#555;font-weight:400;}
-.wrapper{position:relative;margin:0 auto;width:90%;max-width:1200px;}
+.wrapper{position:relative;margin:0 auto;max-width:1200px;}
 .clearfix:after{content:'';display:block;clear:both;}
 ::-webkit-selection{background:#1afbe6a1;color:#fff;text-shadow:none;}
 ::selection{background:#1afbe6a1;color:#fff;text-shadow:none;}
@@ -135,12 +135,15 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 
 /* responsive */
 @media screen and (max-width:1280px){
+    /* common */
     .wrapper{padding:120px 10px;box-sizing:border-box;}
 }
 @media screen and (max-width:1024px){
     /* common */
     body{font-size:14px;}
+    .h3-title{padding:0 0 12px;font-size:24px;}
     .h4-title{padding:0 0 10px;font-size:16px;}
+    .desc-p{padding:0 0 12px;}
 
     /* introduce */
     #introduce{display:block;}
@@ -150,22 +153,43 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     #introduce .skill-box{padding:25px 0 0;}
     #introduce .skill-box > div{padding:0 0 25px;}
     #introduce .skill-box .ul-type01{padding:0;}
+
+    /* work */
+    #work{padding-top:0;}
+    #work .left{width:40%;}
+    #work .right{width:60%;}
+    #work .right .card-list > li{padding:80px 10px 30px;}
 }
 @media screen and (max-width:900px){
-    section{padding:80px 0;}
+    /* common */
+    .wrapper{padding:30px 5%;}
 
-    #introduce{padding:80px 5%;}
+    /* footer */
+    #footer{padding:80px 5%;}
+}
 @media screen and (max-width:768px){
+    /* header */
     #header .logo{font-size:14px;}
     #header .nav-bar-line{height:3px;}
     #header .copy .main-copy{padding-bottom:25px;font-size:28px;letter-spacing:-2px;}
     #header .copy .sub-copy{font-size:14px;}
 
+    /* work */
+    #work > div{display:block;padding:25px 0;width:auto;}
+    #work > div > div{display:block;}
+    #work .left{width:auto;}
+    #work .left .hash-list li span{padding:.2rem .5rem;font-size:11px;}
+    #work .right{width:auto;}
+    #work .right .card-list > li{margin:0 15px 0 0;padding:25px 0 0;width:calc(50% - 10px);}
+    #work .right .card-list > li p{top:0;font-size:130px;}    
+
+    /* footer */
     #footer .greeting{font-size:45px;}
     #footer .sns,
     #footer .copyright{float:none;display:block;width:100%;}
 }
 @media screen and (max-width:520px){
+    /* header */
     #header .copy{padding:0 15px;box-sizing:border-box;}
 }
 
