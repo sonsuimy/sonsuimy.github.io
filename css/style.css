@@ -36,9 +36,12 @@ body{font-family:'Open Sans', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 
 .pb-20{padding-bottom:20px;}
 .pb-35{padding-bottom:35px;}
 section{position:relative;padding:120px 0;overflow:hidden;}
+section i{position:relative;top:-2px;padding:0 10px 0 0;font-size:12px;color:#01a0e4;}
+.main-title-box{margin:0 0 35px;padding:0 0 20px;border-bottom:1px solid #eee;}
+.main-title{position:relative;padding:0 0 0 15px;font-size:32px;line-height:1.5em;font-weight:400;color:#000;}
+.main-title:before{content:'';display:block;position:absolute;top:16px;left:0;width:4px;height:20px;background:#5983e8;border-radius:10px;}
 .h3-title{padding:0 0 25px;font-size:40px;line-height:1.4em;font-weight:300;color:#000;}
 .h4-title{padding:0 0 15px;font-size:20px;font-weight:400;color:#000;}
-.h4-title i{position:relative;top:-2px;padding:0 10px 0 0;font-size:12px;color:#000;}
 .desc-p{padding:0 0 35px;}
 .ul-type01 li{position:relative;padding:0 0 4px 12px;}
 .ul-type01 li:before{content:'';display:block;position:absolute;top:11px;left:0;width:5px;height:1px;background:#222;}
@@ -76,10 +79,14 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #career .left{float:left;padding:0 30px 0 0;width:30%;box-sizing:border-box;}
 #career .right{float:left;width:70%;}
 #career .inner-box{padding:0 0 50px;}
+#career h3{padding:0 0 10px;font-size:22px;font-weight:500;color:#222;}
+#career h4{padding:0 0 10px;font-size:17px;font-size:400;color:#222;}
+#career p{padding:0 0 15px;}
 
 /* work */
-#work > div{display:table;padding:50px 0;width:100%;table-layout:fixed;}
-#work > div > div{display:table-cell;vertical-align:middle;}
+#work .work-box{display:table;padding:0 0 80px;width:100%;table-layout:fixed;}
+#work .work-box:last-of-type{padding:0;}
+#work .work-box > div{display:table-cell;vertical-align:middle;}
 #work .left{padding:0 60px 0 0;}
 #work .left img{max-width:100%;}
 #work .right{padding:0 0 0 60px;}
@@ -88,11 +95,11 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #work .hash-list{display:inline-block;position:relative;top:-1px;margin-left:12px;}
 #work .hash-list .hash{display:inline-block;margin-right:8px;padding:.2rem .7rem .15rem;border-radius:.25rem;font-size:12px;line-height:1.5;font-weight:600;color:#fff;vertical-align:middle;}
 #work .hash-list .hash:last-of-type{margin-right:0;}
-#work .hash-list .web{background:#8c43ff;}
-#work .hash-list .app{background:#dc1c1c;}
-#work .btn-con a{float:left;color:#222;width:42%;height:38px;line-height:38px;border:2px solid #8c43ff;text-align:center;font-size:15px;font-weight:600;color:#8c43ff;transition:all 0.1s;border-radius:5px;box-shadow:0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);}
+#work .hash-list .web{background:#6833ff;}
+#work .hash-list .app{background:#6599ff;}
+#work .btn-con a{float:left;color:#222;width:42%;height:38px;line-height:38px;border:2px solid #01a0e4;text-align:center;font-size:15px;font-weight:600;color:#01a0e4;transition:all 0.1s;border-radius:5px;box-shadow:0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);}
 #work .btn-con a + a{margin-left:3%;}
-#work .btn-con a:hover{color:#fff;background:#8c43ff;}
+#work .btn-con a:hover{color:#fff;background:#01a0e4;}
 
 /* footer */
 #footer{padding:100px 0;}
@@ -146,6 +153,9 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 @media screen and (max-width:1024px){
     /* common */
     body{font-size:14px;}
+    .main-title-box{margin:0 0 20px;padding:0 0 10px;}
+    .main-title{padding:0 0 0 10px;font-size:25px;}
+    .main-title:before{top:13px;width:3px;height:15px;}
     .h3-title{padding:0 0 12px;font-size:28px;}
     .h4-title{padding:0 0 10px;font-size:16px;}
     .desc-p{padding:0 0 25px;}
@@ -154,10 +164,15 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     #introduce{display:block;}
     #introduce h2{margin-bottom:20px;font-size:24px;}
     #introduce > div{display:block;}
-    #introduce .intro-box{padding:0 10px 25px;border-bottom:1px solid #d8d8d8;}
+    #introduce .intro-box{padding:0 10px 25px;border-bottom:1px solid #eee;}
     #introduce .skill-box{padding:25px 0 0;}
     #introduce .skill-box > div{padding:0 0 25px;}
     #introduce .skill-box .ul-type01{padding:0;}
+
+    /* career */
+    #career h3{padding:0 0 8px;font-size:17px;}
+    #career h4{padding:0 0 8px;font-size:15px;}
+    #career p{padding:0 0 10px;}
 
     /* work */
     #work{padding-top:0;}
@@ -175,15 +190,24 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     /* reset */
     br.only-pc{display:none !important;}
 
+    /* common */
+    .pb-35{padding-bottom:20px;}
+
     /* header */
     #header .logo{font-size:14px;}
     #header .nav-bar-line{height:3px;}
     #header .copy .main-copy{padding-bottom:25px;font-size:28px;letter-spacing:-2px;}
     #header .copy .sub-copy{font-size:14px;}
 
+    /* career */
+    #career .career-box{padding:0 0 30px;}
+    #career .inner-box{padding:0 0 20px;}
+    #career .left{width:40%;}
+    #career .right{width:60%;}
+
     /* work */
-    #work > div{display:block;padding:25px 0;width:auto;}
-    #work > div > div{display:block;}
+    #work .work-box{display:block;padding:0 0 40px;width:auto;}
+    #work .work-box > div{display:block;}
     #work .left{margin:0 auto;padding:0 0 20px;width:auto;max-width:400px;}
     #work .right{padding:0;width:auto;}
     #work .ul-type01{padding-left:0;}
