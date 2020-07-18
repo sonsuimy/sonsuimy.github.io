@@ -90,6 +90,9 @@ section{position:relative;padding:120px 0;overflow:hidden;}
 #work .hash-list .hash:last-of-type{margin-right:0;}
 #work .hash-list .web{background:#8c43ff;}
 #work .hash-list .app{background:#dc1c1c;}
+#work .btn-con a{float:left;color:#222;width:42%;height:38px;line-height:38px;border:2px solid #8c43ff;text-align:center;font-size:15px;font-weight:600;color:#8c43ff;transition:all 0.1s;border-radius:5px;box-shadow:0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);}
+#work .btn-con a + a{margin-left:3%;}
+#work .btn-con a:hover{color:#fff;background:#8c43ff;}
 
 /* footer */
 #footer{padding:100px 0;}
@@ -184,9 +187,11 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     #work .left{margin:0 auto;padding:0 0 20px;width:auto;max-width:400px;}
     #work .right{padding:0;width:auto;}
     #work .hash-list .hash{padding:.18rem .5rem;font-size:11px;}
+    #work .btn-con a{float:left;width:calc(48% - 2px);height:35px;line-height:35px;font-size:14px;}
+    #work .btn-con a + a{margin-left:2%;}
 
     /* footer */
-    #footer .greeting{font-size:45px;}
+    #footer .greeting{font-size:35px;}
     #footer .sns,
     #footer .copyright{float:none;display:block;width:100%;}
 }
