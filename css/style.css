@@ -186,6 +186,7 @@ section{position:relative;padding:120px 0;overflow:hidden;}
     #work > div > div{display:block;}
     #work .left{margin:0 auto;padding:0 0 20px;width:auto;max-width:400px;}
     #work .right{padding:0;width:auto;}
+    #work .ul-type01{padding-left:0;}
     #work .hash-list .hash{padding:.18rem .5rem;font-size:11px;}
     #work .btn-con a{float:left;width:calc(48% - 2px);height:35px;line-height:35px;font-size:14px;}
     #work .btn-con a + a{margin-left:2%;}
